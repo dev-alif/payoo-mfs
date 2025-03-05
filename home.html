@@ -17,7 +17,7 @@
         <!-- available balance -->
         <div class="stats shadow">
             <div class="stat">
-                <div class="stat-value">9400</div>
+                <div id="account-balance" class="stat-value">9400</div>
                 <div class="stat-desc">Available Balance</div>
             </div>
         </div>
@@ -29,7 +29,7 @@
         </div>
         <div class="divider"></div>
         <!-- add money form -->
-        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+        <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
             <div class="card-body">
                 <fieldset class="fieldset">
                     <label class="fieldset-label">Amount</label>
@@ -40,8 +40,21 @@
                 </fieldset>
             </div>
         </div>
+        <!-- cash out form -->
+        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <div class="card-body">
+                <fieldset class="fieldset">
+                    <label class="fieldset-label">Amount</label>
+                    <input id="input-cash-out" type="text" class="input" placeholder="Amount" />
+                    <label class="fieldset-label">Pin</label>
+                    <input id="input-cash-pin" type="password" class="input" placeholder="Pin" />
+                    <button id="btn-cash-out" class="btn btn-neutral mt-4">Cash Out</button>
+                </fieldset>
+            </div>
+        </div>
     </main>
     <script src="js/home.js"></script>
+    <script src="js/cashOut.js"></script>
 </body>
 
 </html>
